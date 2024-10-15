@@ -6,7 +6,6 @@ import os
 my_secret_key = st.secrets('MyOpenAIKey')
 os.environ["OPENAI_API_KEY"] = my_secret_key
 
-
 ### Request the answer to the question "Damascus is a"
 client = OpenAI()
 response = client.chat.completions.create(
